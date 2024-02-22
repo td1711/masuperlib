@@ -22,7 +22,9 @@ jobs:
          cd build
          cmake ..
          make
-         
+
     - name: Tests
-      run: make test 
+      run: |
+        cd build
+        make test 
 
